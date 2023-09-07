@@ -10,7 +10,20 @@ print "Surname: "
 surname = gets.chomp
 print "Age: "
 age = gets.chomp
-puts "[1] #{name} #{surname} - #{age} anos"
 
+#creating a Aray to save the visitors' details
+visitors = Array.new
+
+#creating a Hash to save a visitor's detail
 visitor = Hash["name" => name, "surname" => surname, "age" => age]
-puts "#{visitor['name']} #{visitor['surname']} - #{visitor['age']}" 
+#puts "#{visitor['name']} #{visitor['surname']} - #{visitor['age']}" 
+
+#Adding a visitor
+visitors.push(visitor)
+
+#printing all visitor details
+visitors.each_with_index do |visitor, index|
+    puts "[#{index}] #{visitor['name']} #{visitor['surname']} - #{visitor['age']} anos"
+  end
+#visitors.count
+#visitors.empty? #check if has any elements
