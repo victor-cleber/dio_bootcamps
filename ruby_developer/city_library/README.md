@@ -1,4 +1,7 @@
-# City Library visitor's details
+<h1 align="center">
+City Library visitor's details
+<br>
+</h1>
 
 
 <p align="center">
