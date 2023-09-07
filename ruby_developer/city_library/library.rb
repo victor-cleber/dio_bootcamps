@@ -44,12 +44,12 @@ while exit == false
             #puts "#{visitor['name']} #{visitor['surname']} - #{visitor['age']}" 
 
             #Adding a visitor
-            visitors.push(visitor)
-        when '2'
-            puts "entrou"
-            puts visitors
+            visitors.push(visitor)            
+        when '2'            
+            puts "#{visitors}"
             #printing all visitor details
-            if visitors.empty? == true
+            if visitors.empty? == false
+                #puts "entrou"
                 visitors.each_with_index do |visitor, index|
                     puts "[#{index}] #{visitor['name']} #{visitor['surname']} - #{visitor['age']} anos"
                 end
