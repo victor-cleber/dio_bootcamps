@@ -1,4 +1,6 @@
 #!/usr/bin/ruby
+
+
 puts "----------------------------------------"
 puts "Thank you for visiting our City Library.\n "
 puts "Please complete the fields bellow: "
@@ -9,3 +11,6 @@ surname = gets.chomp
 print "Age: "
 age = gets.chomp
 puts "[1] #{name} #{surname} - #{age} anos"
+
+visitor = Hash["name" => name, "surname" => surname, "age" => age]
+puts "#{visitor['name']} #{visitor['surname']} - #{visitor['age']}" 
